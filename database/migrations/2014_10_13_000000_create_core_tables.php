@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateCoreTables extends Migration
 {
     /**
      * Run the migrations.
@@ -122,7 +122,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
-        
+
         Schema::create('companies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
@@ -164,7 +164,7 @@ class CreateUsersTable extends Migration
             $table->string('custom_task_label2')->nullable();
 
             $table->string('custom_expense_label1')->nullable();
-            $table->string('custom_expense_label2')->nullable();    
+            $table->string('custom_expense_label2')->nullable();
             $table->string('vat_number')->nullable();
             $table->string('id_number')->nullable();
 
@@ -172,7 +172,7 @@ class CreateUsersTable extends Migration
 
             $table->timestamps();
             $table->softDeletes();
-            
+
             $table->foreign('timezone_id')->references('id')->on('timezones');
             $table->foreign('country_id')->references('id')->on('countries');
             $table->foreign('currency_id')->references('id')->on('currencies');
@@ -204,7 +204,7 @@ class CreateUsersTable extends Migration
 
 
         });
-        
+
         Schema::create('users', function (Blueprint $table) {
 
             $table->increments('id');
@@ -230,7 +230,7 @@ class CreateUsersTable extends Migration
             $table->text('signature');
             $table->string('password');
             $table->rememberToken();
-            
+
             $table->timestamps();
             $table->softDeletes();
 

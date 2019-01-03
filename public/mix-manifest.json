@@ -1,0 +1,16 @@
+{
+    "/js/client_list.js": "/js/client_list.js?id=b42a8ef5e2ca51e9db94",
+    "/js/client_edit.js": "/js/client_edit.js?id=99f42439c5dced6bb5d3",
+    "/js/client_create.js": "/js/client_create.js?id=deb33e7efb3c6b2d05df",
+    "/js/localization.js": "/js/localization.js?id=09c307464dd769890149",
+    "/js/coreui.js": "/js/coreui.js?id=610e3aecd183cc93f5d8",
+    "/js/ninja.js": "/js/ninja.js?id=d41d8cd98f00b204e980",
+    "/js/ninja.min.js": "/js/ninja.min.js?id=d41d8cd98f00b204e980",
+    "/js/coreui.min.js": "/js/coreui.min.js?id=610e3aecd183cc93f5d8",
+    "/js/client_edit.min.js": "/js/client_edit.min.js?id=99f42439c5dced6bb5d3",
+    "/js/client_create.min.js": "/js/client_create.min.js?id=deb33e7efb3c6b2d05df",
+    "/js/client_list.min.js": "/js/client_list.min.js?id=b42a8ef5e2ca51e9db94",
+    "/js/localization.min.js": "/js/localization.min.js?id=09c307464dd769890149",
+    "/css/ninja.css": "/css/ninja.css?id=10820d7178a90f2a12c3",
+    "/css/ninja.min.css": "/css/ninja.min.css?id=10820d7178a90f2a12c3"
+}

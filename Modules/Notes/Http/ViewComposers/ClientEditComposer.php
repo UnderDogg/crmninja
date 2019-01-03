@@ -18,7 +18,7 @@ class ClientEditComposer
     public function compose(View $view)
     {
         $data = $view->getData();
-        
+
         $view->with('notes::edit', $this->clientEditData);
     }
 

@@ -21,12 +21,13 @@ class DatabaseSeeder extends Seeder
 
         Eloquent::unguard();
 
-        $this->call('ConstantsSeeder');
+        $this->call('RandomDataSeeder');
+        /* $this->call('ConstantsSeeder');
         $this->call('PaymentLibrariesSeeder');
         $this->call('BanksSeeder');
         $this->call('CurrenciesSeeder');
         $this->call('LanguageSeeder');
-        $this->call('CountriesSeeder');
+        $this->call('CountriesSeeder'); */
 
     }
 }
