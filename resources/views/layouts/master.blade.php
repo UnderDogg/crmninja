@@ -30,28 +30,6 @@
     <meta name="description" content="@yield('meta_description')"/>
     <link href="{{ asset('favicon.png') }}" rel="shortcut icon" type="image/png">
 
-    <!--
-    TODO Setup social sharing info
-    <meta property="og:site_name" content="Invoice Ninja"/>
-    <meta property="og:url" content="{{ config('ninja.site_url') }}"/>
-    <meta property="og:title" content="Invoice Ninja"/>
-    <meta property="og:image" content="{{ config('ninja.site_url') }}/images/logo.png"/>
-    <meta property="og:description" content="Create. Send. Get Paid."/>
-    --/>
-    <!-- http://realfavicongenerator.net -->
-    <!--
-    TODO Setup favicon
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('favicon-32x32.png') }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ url('favicon-16x16.png') }}" sizes="16x16">
-    <link rel="manifest" href="{{ url('manifest.json') }}">
-    <link rel="mask-icon" href="{{ url('safari-pinned-tab.svg') }}" color="#3bc65c">
-    <link rel="shortcut icon" href="{{ url('favicon.ico') }}">
-    <meta name="apple-mobile-web-app-title" content="Invoice Ninja">
-    <meta name="application-name" content="Invoice Ninja">
-    <meta name="theme-color" content="#ffffff">
-    -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +47,7 @@
          background-color: #167090 !important;
          color: #fff;
        }
-   
+
         a.bg-primary2:hover, a.bg-primary:focus,
         button.bg-primary:hover,
         button.bg-primary:focus {

@@ -1,4 +1,5 @@
 <div class="sidebar">
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
     <nav class="sidebar-nav">
         <ul class="nav">
 
@@ -11,6 +12,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="/clients">
                     <i class="nav-icon icon-user"></i> @lang('texts.clients')</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/products">
+                    <i class="nav-icon icon-user"></i> @lang('texts.products')</a>
             </li>
 
             <li class="nav-item">
@@ -39,6 +45,11 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link" href="/proposals">
+                    <i class="nav-icon icon-vector"></i> @lang('texts.proposals')</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="typography.html">
                     <i class="nav-icon icon-wrench"></i> @lang('texts.projects')</a>
             </li>
@@ -58,10 +69,23 @@
                     <i class="nav-icon icon-bell"></i> @lang('texts.vendors')</a>
             </li>
 
+
+            <li class="nav-item">
+                <a class="nav-link" href="/tickets">
+                    <i class="nav-icon icon-bell"></i> @lang('texts.tickets')</a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="typography.html">
                     <i class="nav-icon icon-printer"></i> @lang('texts.reports')</a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/settings">
+                    <i class="nav-icon icon-printer"></i> @lang('texts.settings')</a>
+            </li>
+
+
         </ul>
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>

@@ -32,14 +32,14 @@ class OAuth
         /** 1. Ensure user arrives on the correct provider **/
 
         $query = [
-            'oauth_user_id' =>$user->getId()) 
+            'oauth_user_id' =>$user->getId(),
             'oauth_provider_id'=>$provider
         ];
 
-        if($user = MultiDB::hasUser($query)
-        {
-            return $user;
-        }
+        // if($user = MultiDB::hasUser($query)
+        // {
+        //     return $user;
+        // }
 
         /** 2. If email exists, then they already have an account did they select the wrong provider? redirect to a guest error screen */
 
@@ -54,7 +54,7 @@ class OAuth
             Session::flash('error', 'User does not exist'); //todo add translations
             return view('auth.login');
         */
-       
+
         /** 3. We will not handle automagically creating a new account here. */
 
 
