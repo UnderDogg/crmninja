@@ -62,7 +62,7 @@ class RandomDataSeeder extends Seeder
         ]);
 
 
-        factory(\App\Models\Client::class, 50)->create(['user_id' => $user->id, 'company_id' => $company->id])->each(function ($c) use ($user, $company){
+        factory(\App\Models\Client::class, 500)->create(['user_id' => $user->id, 'company_id' => $company->id])->each(function ($c) use ($user, $company){
 
             factory(\App\Models\ClientContact::class,1)->create([
                 'user_id' => $user->id,
@@ -77,12 +77,12 @@ class RandomDataSeeder extends Seeder
                 'company_id' => $company->id
             ]);
 /*
-            factory(\App\Models\ClientLocation::class,1)->create([
+            factory(\App\Models\ClientLocation::class,10)->create([
                 'client_id' => $c->id,
                 'is_primary_billing' => 1
             ]);
 
-            factory(\App\Models\ClientLocation::class,10)->create([
+            factory(\App\Models\ClientLocation::class,5)->create([
                 'client_id' => $c->id,
             ]);
 */
