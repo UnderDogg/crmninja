@@ -39,7 +39,7 @@ return [
     'postmark_ticket_2' => env('POSTMARK_API_TICKET_TOKEN_2'),
 
     'stripe' => [
-        'model'  => App\Models\User::class,
+        'model'  => Modules\Core\Models\Staff::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

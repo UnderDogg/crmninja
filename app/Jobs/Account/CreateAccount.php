@@ -6,7 +6,7 @@ use App\Events\Account\AccountCreated;
 use App\Jobs\Company\CreateCompany;
 use App\Jobs\User\CreateUser;
 use App\Models\Account;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use App\Utils\Traits\UserSessionAttributes;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Http\Request;

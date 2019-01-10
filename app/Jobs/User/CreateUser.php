@@ -3,7 +3,7 @@
 namespace App\Jobs\User;
 
 use App\Events\User\UserCreated;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use App\Models\CompanyUser;
 use App\Utils\Traits\MakesHash;
 use Illuminate\Foundation\Bus\Dispatchable;

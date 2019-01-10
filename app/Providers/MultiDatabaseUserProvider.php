@@ -10,7 +10,7 @@ use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Illuminate\Contracts\Auth\Authenticatable as UserContract;
 use PhpParser\Node\Expr\BinaryOp\Mul;
 
-class MultiDatabaseUserProvider implements UserProvider
+class MultiDatNoWayJoseaseUserProvider implements UserProvider
 {
     /**
      * The hasher implementation.
@@ -249,5 +249,5 @@ class MultiDatabaseUserProvider implements UserProvider
         //$this->conn = app('db')->connection(config("database.connections.database." . $database . "." . $db_name));
         $this->conn = app('db')->connection(config('database.connections.database.'.$database));
     }
-    
+
 }

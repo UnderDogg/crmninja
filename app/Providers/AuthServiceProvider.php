@@ -27,14 +27,14 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Auth::provider('users', function ($app, array $config) {
+        /* Auth::provider('users', function ($app, array $config) {
             return new MultiDatabaseUserProvider($this->app['hash'], $config['model']);
         });
 
         Auth::provider('contacts', function ($app, array $config) {
             return new MultiDatabaseUserProvider($this->app['hash'], $config['model']);
 
-        });
+        }); */
     }
 
 }

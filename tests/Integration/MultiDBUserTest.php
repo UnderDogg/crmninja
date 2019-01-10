@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use App\Libraries\MultiDB;
 use App\Models\Account;
 use App\Models\Company;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

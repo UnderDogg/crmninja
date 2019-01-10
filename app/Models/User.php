@@ -11,13 +11,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laracasts\Presenter\PresentableTrait;
 
-class User extends Authenticatable implements MustVerifyEmail
+class donotuseUserdonotuse extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
     use SoftDeletes;
     use PresentableTrait;
     use MakesHash;
-    
+
     protected $guard = 'user';
 
     protected $dates = ['deleted_at'];

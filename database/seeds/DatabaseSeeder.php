@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
 
         Eloquent::unguard();
 
-        $this->call('RandomDataSeeder');
+        $this->call('LaratrustSeeder');
         /* $this->call('ConstantsSeeder');
         $this->call('PaymentLibrariesSeeder');
         $this->call('BanksSeeder');

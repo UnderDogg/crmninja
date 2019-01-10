@@ -2,7 +2,7 @@
 
 namespace App\Libraries;
 
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 

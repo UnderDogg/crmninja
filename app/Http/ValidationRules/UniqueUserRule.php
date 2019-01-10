@@ -3,7 +3,7 @@
 namespace App\Http\ValidationRules;
 
 use App\Libraries\MultiDB;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use Illuminate\Contracts\Validation\Rule;
 
 class UniqueUserRule implements Rule

@@ -36,6 +36,7 @@
         "laravel/tinker": "^1.0",
         "nwidart/laravel-modules": "^4.0",
         "predis/predis": "^1.1",
+        "santigarcor/laratrust": "5.0.*",
         "spatie/laravel-html": "^2.19",
         "webpatser/laravel-countries": "dev-master#75992ad",
         "wildbit/postmark-php": "^2.6",

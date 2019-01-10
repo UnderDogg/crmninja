@@ -24,9 +24,10 @@ class HeaderComposer
     {
         if(!auth()->user())
             return [];
-        
+
         //companies
         $companies = auth()->user()->companies;
+
 
         $data['current_company'] = $companies->first(function ($company){
             return $company->id == $this->getCurrentCompanyId();
@@ -35,7 +36,6 @@ class HeaderComposer
         $data['companies'] = $companies->reject(function ($company){
             return $company->id == $this->getCurrentCompanyId();
         });
-
         return $data;
     }
 

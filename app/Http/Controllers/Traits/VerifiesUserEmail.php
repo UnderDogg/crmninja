@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Traits;
 
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use App\Utils\Traits\UserSessionAttributes;
 use Illuminate\Support\Facades\Auth;
 

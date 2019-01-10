@@ -79,7 +79,7 @@ Route::get('js/lang.js', 'TranslationController@index')->name('assets.lang');
 
 /* Dev Playground
 Route::get('/mailable', function () {
-    $user = App\Models\User::find(1);
+    $user = Modules\Core\Models\Staff::find(1);
 
     return new App\Mail\VerifyUser($user);
 });

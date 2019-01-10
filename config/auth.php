@@ -74,7 +74,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => env('USER_AUTH_PROVIDER', 'eloquent'),
-            'model' => App\Models\User::class,
+            'model' => Modules\Core\Models\Staff::class,
         ],
         'contacts' => [
             'driver' => env('CONTACT_AUTH_PROVIDER', 'eloquent'),

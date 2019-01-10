@@ -5,7 +5,6 @@ namespace App\Utils\Traits;
 
 trait UserSessionAttributes
 {
-
     public function setCurrentCompanyId($value) : void
     {
         session(['current_company_id' => $value]);
@@ -13,7 +12,13 @@ trait UserSessionAttributes
 
     public function getCurrentCompanyId() : int
     {
-        return session('current_company_id');
+        $temp = session('current_company_id');
+        if(!isset($temp) || is_null($temp))
+        {
+            $temp = 1;
+        }
+
+        return $temp;
     }
 
 }

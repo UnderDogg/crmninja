@@ -3,8 +3,8 @@
 use App\Models\Account;
 use App\Models\Client;
 use App\Models\ClientContact;
-use App\Models\User;
-use App\Models\UserAccount;
+use Modules\Core\Models\Staff;
+use Modules\Core\Models\StaffAccount;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder
         $account->default_company_id = $company->id;
         $account->save();
 
-        $user = factory(\App\Models\User::class)->create([
+        $user = factory(\Modules\Core\Models\Staff::class)->create([
             'account_id' => $account->id,
             'confirmation_code' => $this->createDbHash(config('database.default'))
         ]);

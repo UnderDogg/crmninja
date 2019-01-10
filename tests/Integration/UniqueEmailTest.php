@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use App\Http\ValidationRules\UniqueUserRule;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use App\Models\Account;
 use App\Models\Company;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;

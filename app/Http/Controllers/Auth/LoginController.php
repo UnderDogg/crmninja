@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Libraries\OAuth;
-use App\Models\User;
+use Modules\Core\Models\Staff;
 use App\Utils\Traits\UserSessionAttributes;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -50,9 +50,9 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function authenticated(Request $request, User $user) : void
+    public function authenticated(Request $request, Staff $staffmember) : void
     {
-        $this->setCurrentCompanyId($user->companies()->first()->account->default_company_id);
+        $this->setCurrentCompanyId($staffmember->companies()->first()->account->default_company_id);
     }
 
     /**
@@ -60,7 +60,7 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function redirectToProvider(string $provider) 
+    public function redirectToProvider(string $provider)
     {
         return Socialite::driver($provider)->redirect();
     }
@@ -71,14 +71,14 @@ class LoginController extends Controller
      *
      * @return redirect
      */
-    public function handleProviderCallback(string $provider) 
+    public function handleProviderCallback(string $provider)
     {
         $socialite_user = Socialite::driver($provider)->user();
 
         if($user = OAuth::handleAuth($socialite_user, $provider))
         {
             Auth::login($user, true);
-            
+
             return redirect($this->redirectTo);
         }
 
